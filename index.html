@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitSupp Pro - Compléments Alimentaires pour Sportifs</title>
+        <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+        <script>tailwind.config={theme:{extend:{colors:{primary:'#8B1538',secondary:'#ff6b35'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+        <style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+background: #0a0a0a;
+color: #ffffff;
+overflow-x: hidden;
+}
+.orbitron { font-family: 'Orbitron', monospace; }
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-20px); }
+}
+@keyframes pulse-glow {
+0%, 100% { box-shadow: 0 0 20px rgba(139, 21, 56, 0.5); }
+50% { box-shadow: 0 0 40px rgba(139, 21, 56, 0.8); }
+}
+@keyframes glitch {
+0% { transform: translate(0); }
+20% { transform: translate(-2px, 2px); }
+40% { transform: translate(-2px, -2px); }
+60% { transform: translate(2px, 2px); }
+80% { transform: translate(2px, -2px); }
+100% { transform: translate(0); }
+}
+@keyframes slideInLeft {
+from { transform: translateX(-100px); opacity: 0; }
+to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInRight {
+from { transform: translateX(100px); opacity: 0; }
+to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeInUp {
+from { transform: translateY(50px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+@keyframes rotate360 {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+@keyframes scroll-brands {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-glitch { animation: glitch 0.3s ease-in-out; }
+.animate-slide-in-left { animation: slideInLeft 0.8s ease-out; }
+.animate-slide-in-right { animation: slideInRight 0.8s ease-out; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease-out; }
+.animate-rotate { animation: rotate360 2s linear infinite; }
+.animate-scroll-brands { animation: scroll-brands 30s linear infinite; }
+.bg-dark-pattern {
+background-image:
+radial-gradient(circle at 25% 25%, rgba(139, 21, 56, 0.1) 0%, transparent 50%),
+radial-gradient(circle at 75% 75%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+}
+.glass-effect {
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.product-card {
+background: linear-gradient(145deg, rgba(20, 20, 20, 0.8), rgba(40, 40, 40, 0.6));
+border: 1px solid rgba(139, 21, 56, 0.2);
+transition: all 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-10px) rotateX(5deg);
+box-shadow: 0 20px 40px rgba(139, 21, 56, 0.3);
+border-color: rgba(139, 21, 56, 0.6);
+}
+.hero-bg {
+background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+url('https://readdy.ai/api/search-image?query=muscular%20bodybuilder%20training%20in%20dark%20gym%20with%20dramatic%20lighting%2C%20intense%20workout%20atmosphere%2C%20modern%20fitness%20equipment%2C%20cinematic%20composition%2C%20high%20contrast%20shadows%20and%20highlights%2C%20professional%20sports%20photography&width=1920&height=1080&seq=hero-bg&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.section-bg {
+background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(30, 30, 30, 0.9)),
+url('https://readdy.ai/api/search-image?query=abstract%20fitness%20background%20with%20geometric%20patterns%2C%20dark%20gym%20atmosphere%2C%20subtle%20muscle%20silhouettes%2C%20modern%20sports%20design%20elements&width=1920&height=1080&seq=section-bg&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.testimonial-card {
+background: linear-gradient(145deg, rgba(30, 30, 30, 0.9), rgba(50, 50, 50, 0.7));
+border-left: 4px solid #8B1538;
+}
+.brand-logo {
+filter: grayscale(100%) brightness(0.7);
+transition: all 0.3s ease;
+}
+.brand-logo:hover {
+filter: grayscale(0%) brightness(1);
+transform: scale(1.1);
+}
+.nav-link {
+position: relative;
+overflow: hidden;
+}
+.nav-link::before {
+content: '';
+position: absolute;
+bottom: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, #8B1538, #ff6b35);
+transition: left 0.3s ease;
+}
+.nav-link:hover::before {
+left: 0;
+}
+.btn-whatsapp {
+background: linear-gradient(135deg, #25d366, #128c7e);
+transition: all 0.3s ease;
+}
+.btn-whatsapp:hover {
+background: linear-gradient(135deg, #128c7e, #25d366);
+transform: scale(1.05);
+}
+.scroll-indicator {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg, #8B1538, #ff6b35);
+transform-origin: left;
+z-index: 9999;
+}
+@media (max-width: 768px) {
+.hero-bg, .section-bg {
+background-attachment: scroll;
+}
+.animate-glitch {
+animation: none;
+}
+.animate-float {
+animation: none;
+}
+.animate-pulse-glow {
+animation: pulse-glow 3s ease-in-out infinite;
+}
+}
+@media (max-width: 480px) {
+.orbitron {
+line-height: 1.1;
+}
+.animate-pulse-glow {
+animation: none;
+}
+}
+
+@media (max-width: 460px) {
+    .performance{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 385px) {
+    .performance{
+        font-size: 34px;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="scroll-indicator" id="scrollIndicator"></div>
+        <header class="fixed top-0 w-full z-50 glass-effect">
+            <nav class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <img src="logo.png" alt="" style="width: 110px;">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#accueil" class="nav-link text-white hover:text-primary transition-colors">Accueil</a>
+                        <a href="produits.html" class="nav-link text-white hover:text-primary transition-colors">Produits</a>
+                        <a href="#about" class="nav-link text-white hover:text-primary transition-colors">À Propos</a>
+                        <a href="#avis" class="nav-link text-white hover:text-primary transition-colors">Avis</a>
+                        <a href="#marques" class="nav-link text-white hover:text-primary transition-colors">Marques</a>
+                        <a href="#contact" class="nav-link text-white hover:text-primary transition-colors">Contact</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <!-- Pour WhatsApp -->
+                        <button class="btn-whatsapp flex items-center justify-center w-12 h-12 rounded-lg bg-[#25D366] text-white" onclick="openWhatsApp()">
+                            <i class="ri-whatsapp-fill text-xl"></i>
+                        </button>
+                        <a href="https://www.instagram.com/nopain_nogain_nutrition?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:opacity-90 transition-opacity">
+                            <i class="ri-instagram-fill text-xl"></i>
+                        </a>
+                        <a href="https://web.facebook.com/people/Nopain-Nogain-Nutrition/61561471307579/?ref=_xav_ig_profile_page_web#" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#1877F2] text-white hover:opacity-90 transition-opacity">
+                            <i class="ri-facebook-fill text-xl"></i>
+                        </a>
+                        <button class="md:hidden text-white text-2xl" id="mobileMenuBtn">
+                            <i class="ri-menu-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="md:hidden mt-4 hidden" id="mobileMenu">
+                    <div class="flex flex-col space-y-4 pb-4">
+                        <a href="#accueil" class="text-white hover:text-primary transition-colors">Accueil</a>
+                        <a href="produits.html" class="text-white hover:text-primary transition-colors">Produits</a>
+                        <a href="#about" class="text-white hover:text-primary transition-colors">À Propos</a>
+                        <a href="#avis" class="text-white hover:text-primary transition-colors">Avis</a>
+                        <a href="#marques" class="text-white hover:text-primary transition-colors">Marques</a>
+                        <a href="#contact" class="text-white hover:text-primary transition-colors">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="accueil" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                <div class="container mx-auto px-6 relative z-10">
+                    <div class="max-w-4xl">
+                        <h1 class="orbitron text-5xl md:text-7xl font-black mb-6 animate-slide-in-left">
+                            BOOST YOUR
+                            <span class="text-primary animate-glitch performance">PERFORMANCE</span>
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 text-gray-300 animate-slide-in-left" style="animation-delay: 0.2s;">
+                            Découvrez notre gamme premium de compléments alimentaires pour atteindre vos objectifs fitness
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                            <button class="bg-primary text-white px-8 py-4 !rounded-button font-bold text-lg hover:bg-primary/90 transition-all animate-pulse-glow whitespace-nowrap" onclick="scrollToSection('produits')">
+                                <i class="ri-rocket-fill mr-2 text-white"></i>
+                                Découvrir nos Produits
+                            </button>
+                            <button class="btn-whatsapp px-8 py-4 !rounded-button font-bold text-lg whitespace-nowrap" onclick="openWhatsApp()">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander Maintenant
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-float">
+                    <i class="ri-arrow-down-line text-primary text-3xl"></i>
+                </div>
+            </section>
+            <section id="about" class="section-bg py-20">
+                <div class="container mx-auto px-6">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="animate-slide-in-left">
+                            <h2 class="orbitron text-4xl font-bold mb-6 text-primary">À Propos de FitSupp Pro</h2>
+                            <p class="text-lg mb-6 text-gray-300">
+                                Depuis plus de 10 ans, nous sommes votre partenaire de confiance dans l'univers de la nutrition sportive. Notre boutique spécialisée propose une sélection rigoureuse des meilleurs compléments alimentaires pour optimiser vos performances.
+                            </p>
+                            <p class="text-lg mb-8 text-gray-300">
+                                Que vous soyez débutant ou athlète confirmé, notre équipe d'experts vous accompagne dans le choix des produits adaptés à vos objectifs : prise de masse, définition musculaire, endurance ou récupération.
+                            </p>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary orbitron">10+</div>
+                                    <div class="text-sm text-gray-400">Années d'expérience</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary orbitron">5000+</div>
+                                    <div class="text-sm text-gray-400">Clients satisfaits</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary orbitron">50+</div>
+                                    <div class="text-sm text-gray-400">Produits premium</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary orbitron">24/7</div>
+                                    <div class="text-sm text-gray-400">Support client</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-slide-in-right">
+                            <div class="relative">
+                                <img src="https://readdy.ai/api/search-image?query=modern%20supplement%20store%20interior%20with%20professional%20display%20shelves%2C%20premium%20nutrition%20products%2C%20clean%20minimalist%20design%2C%20bright%20lighting%2C%20fitness%20atmosphere&width=600&height=400&seq=about-img&orientation=landscape" alt="Notre boutique" class="rounded-2xl w-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="produits" class="bg-dark-pattern py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 animate-fade-in-up">
+                        <h2 class="orbitron text-4xl font-bold mb-4 text-primary">Nos Produits Vedettes</h2>
+                        <p class="text-xl text-gray-300">Découvrez notre sélection premium de compléments alimentaires</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.1s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=premium%20whey%20protein%20powder%20container%20with%20modern%20label%20design%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20fitness%20supplement%20packaging&width=300&height=200&seq=whey-protein&orientation=landscape" alt="Whey Protein" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-4 right-4 bg-secondary px-3 py-1 rounded-full text-sm font-bold">
+                                    Best Seller
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Whey Protein Isolate</h3>
+                            <p class="text-gray-400 mb-4">Protéine ultra-pure pour une récupération optimale</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">25.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Whey Protein Isolate')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.2s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=creatine%20monohydrate%20supplement%20bottle%20with%20professional%20label%2C%20sports%20nutrition%20product%20photography%2C%20clean%20background%2C%20modern%20packaging%20design&width=300&height=200&seq=creatine&orientation=landscape" alt="Créatine" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Créatine Monohydrate</h3>
+                            <p class="text-gray-400 mb-4">Augmentez votre force et votre puissance</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">20.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Créatine Monohydrate')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.3s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=pre-workout%20supplement%20container%20with%20energetic%20design%2C%20fitness%20nutrition%20product%2C%20professional%20photography%2C%20dynamic%20packaging&width=300&height=200&seq=preworkout&orientation=landscape" alt="Pre-Workout" class="w-full h-48 object-cover rounded-lg">
+                                <div class="absolute top-4 right-4 bg-primary text-black px-3 py-1 rounded-full text-sm font-bold">
+                                    Nouveau
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Pre-Workout Extreme</h3>
+                            <p class="text-gray-400 mb-4">Boostez vos séances d'entraînement</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">17.500fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Pre-Workout Extreme')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.4s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=BCAA%20amino%20acids%20supplement%20bottle%20with%20modern%20design%2C%20sports%20nutrition%20product%2C%20professional%20photography%2C%20clean%20packaging&width=300&height=200&seq=bcaa&orientation=landscape" alt="BCAA" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">BCAA 2:1:1</h3>
+                            <p class="text-gray-400 mb-4">Acides aminés essentiels pour la récupération</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">32.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('BCAA 2:1:1')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.5s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=mass%20gainer%20protein%20powder%20container%20with%20powerful%20design%2C%20bodybuilding%20supplement%2C%20professional%20product%20photography%2C%20premium%20packaging&width=300&height=200&seq=mass-gainer&orientation=landscape" alt="Mass Gainer" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Mass Gainer Pro</h3>
+                            <p class="text-gray-400 mb-4">Prise de masse rapide et efficace</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">18.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Mass Gainer Pro')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.6s;">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=fat%20burner%20supplement%20capsules%20bottle%20with%20dynamic%20design%2C%20weight%20loss%20nutrition%20product%2C%20professional%20photography%2C%20modern%20packaging&width=300&height=200&seq=fat-burner&orientation=landscape" alt="Fat Burner" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Fat Burner Advanced</h3>
+                            <p class="text-gray-400 mb-4">Brûleur de graisse nouvelle génération</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">17.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Fat Burner Advanced')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    <div id="extra-products" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 hidden">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=glutamine%20supplement%20powder%20container%20with%20clean%20professional%20design%2C%20sports%20nutrition%20product%20photography%2C%20modern%20packaging&width=300&height=200&seq=glutamine&orientation=landscape" alt="Glutamine" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Glutamine Pure</h3>
+                            <p class="text-gray-400 mb-4">Récupération musculaire optimale</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">21.500fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Glutamine Pure')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=omega-3%20fish%20oil%20capsules%20bottle%20with%20premium%20design%2C%20health%20supplement%20product%2C%20professional%20photography&width=300&height=200&seq=omega3&orientation=landscape" alt="Omega-3" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Omega-3 Premium</h3>
+                            <p class="text-gray-400 mb-4">Santé cardiovasculaire et articulaire</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">7.500fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Omega-3 Premium')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=multivitamin%20supplement%20bottle%20with%20modern%20label%20design%2C%20comprehensive%20nutrition%20product%2C%20clean%20packaging%20photography&width=300&height=200&seq=multivitamin&orientation=landscape" alt="Multivitamines" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Multivitamines Sport</h3>
+                            <p class="text-gray-400 mb-4">Complexe vitaminique pour sportifs</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">27.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Multivitamines Sport')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=ZMA%20zinc%20magnesium%20supplement%20capsules%20with%20professional%20design%2C%20recovery%20nutrition%20product%2C%20modern%20packaging&width=300&height=200&seq=zma&orientation=landscape" alt="ZMA" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">ZMA Recovery</h3>
+                            <p class="text-gray-400 mb-4">Zinc, Magnésium et Vitamine B6</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">19.250fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('ZMA Recovery')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=casein%20protein%20powder%20container%20with%20nighttime%20formula%20design%2C%20slow-release%20protein%20supplement%2C%20premium%20packaging&width=300&height=200&seq=casein&orientation=landscape" alt="Caséine" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Caséine Micellaire</h3>
+                            <p class="text-gray-400 mb-4">Protéine à libération lente</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">13.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Caséine Micellaire')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up">
+                            <div class="relative mb-6">
+                                <img src="https://readdy.ai/api/search-image?query=HMB%20supplement%20capsules%20bottle%20with%20athletic%20design%2C%20muscle%20preservation%20product%2C%20professional%20supplement%20photography&width=300&height=200&seq=hmb&orientation=landscape" alt="HMB" class="w-full h-48 object-cover rounded-lg">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">HMB Advanced</h3>
+                            <p class="text-gray-400 mb-4">Protection et récupération musculaire</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-2xl font-bold text-primary">42.000fcfa</span>
+                                <div class="flex text-yellow-400">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                            </div>
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('HMB Advanced')">
+                                <i class="ri-whatsapp-fill mr-2"></i>
+                                Commander sur WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <a href="produits.html">
+                        <button id="show-all-products-btn" class="btn-whatsapp px-8 py-4 !rounded-button font-bold text-lg whitespace-nowrap" onclick="toggleAllProducts()">
+                            <i class="ri-eye-line mr-2"></i>
+                            Voir tous nos Produits
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="avis" class="section-bg py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 animate-fade-in-up">
+                        <h2 class="orbitron text-4xl font-bold mb-4 text-primary">Ce que disent nos Clients</h2>
+                        <p class="text-xl text-gray-300">Découvrez les témoignages de notre communauté</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="testimonial-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.1s;">
+                            <div class="flex items-center mb-4">
+                                <img src="data:image/jpeg;base64,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" alt="Mamadou Diallo" class="w-12 h-12 rounded-full object-cover mr-4">
+                                <div>
+                                    <h4 class="font-semibold">Mamadou Diallo</h4>
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">
+                                "Excellent service ! J'ai pris 8 kg de muscle en 6 mois grâce à leurs conseils personnalisés et leurs produits de qualité. Je recommande vivement !"
+                            </p>
+                        </div>
+                        <div class="testimonial-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.2s;">
+                            <div class="flex items-center mb-4">
+                                <img src="data:image/jpeg;base64,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" alt="Aminata Ndiaye" class="w-12 h-12 rounded-full object-cover mr-4">
+                                <div>
+                                    <h4 class="font-semibold">Aminata Ndiaye</h4>
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">
+                                "La livraison est ultra rapide et les produits sont authentiques. L'équipe est très professionnelle et répond rapidement sur WhatsApp."
+                            </p>
+                        </div>
+                        <div class="testimonial-card p-6 rounded-2xl animate-fade-in-up" style="animation-delay: 0.3s;">
+                            <div class="flex items-center mb-4">
+                                <img src="data:image/jpeg;base64,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" alt="Ousmane Sène" class="w-12 h-12 rounded-full object-cover mr-4">
+                                <div>
+                                    <h4 class="font-semibold">Ousmane Sène</h4>
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">
+                                "En tant que coach sportif, je recommande FitSupp Pro à tous mes clients. Qualité irréprochable et prix compétitifs !"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-16 text-center">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                                <div class="text-4xl font-bold text-primary orbitron">98%</div>
+                                <div class="text-gray-400">Satisfaction client</div>
+                            </div>
+                            <div class="animate-fade-in-up" style="animation-delay: 0.5s;">
+                                <div class="text-4xl font-bold text-primary orbitron">4.9/5</div>
+                                <div class="text-gray-400">Note moyenne</div>
+                            </div>
+                            <div class="animate-fade-in-up" style="animation-delay: 0.6s;">
+                                <div class="text-4xl font-bold text-primary orbitron">24h</div>
+                                <div class="text-gray-400">Livraison express</div>
+                            </div>
+                            <div class="animate-fade-in-up" style="animation-delay: 0.7s;">
+                                <div class="text-4xl font-bold text-primary orbitron">100%</div>
+                                <div class="text-gray-400">Produits authentiques</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="marques" class="bg-dark-pattern py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 animate-fade-in-up">
+                        <h2 class="orbitron text-4xl font-bold mb-4 text-primary">Nos Marques Partenaires</h2>
+                        <p class="text-xl text-gray-300">Nous travaillons avec les leaders mondiaux de la nutrition sportive</p>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="flex animate-scroll-brands">
+                            <div class="flex space-x-12 min-w-full">
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-shield-check-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Optimum</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-fire-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">BSN</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-flashlight-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Dymatize</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-rocket-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">MuscleTech</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-star-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Scitec</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-trophy-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Weider</span>
+                                </div>
+                            </div>
+                            <div class="flex space-x-12 min-w-full">
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-shield-check-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Optimum</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-fire-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">BSN</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-flashlight-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Dymatize</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-rocket-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">MuscleTech</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-star-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Scitec</span>
+                                </div>
+                                <div class="brand-logo flex items-center justify-center w-32 h-20 bg-white/10 rounded-lg">
+                                    <i class="ri-trophy-fill text-4xl text-white"></i>
+                                    <span class="ml-2 font-bold">Weider</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 text-center">
+                        <div class="glass-effect p-8 rounded-2xl max-w-4xl mx-auto">
+                            <h3 class="text-2xl font-bold mb-4 text-primary">Garantie Authenticité</h3>
+                            <p class="text-gray-300 mb-6">
+                                Tous nos produits sont importés directement des fabricants officiels. Nous garantissons l'authenticité et la fraîcheur de chaque complément alimentaire.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                                <div class="flex items-center justify-center sm:justify-start">
+                                    <i class="ri-verified-badge-fill text-primary text-xl mr-2 flex-shrink-0"></i>
+                                    <span class="text-xs sm:text-sm">Certification officielle</span>
+                                </div>
+                                <div class="flex items-center justify-center sm:justify-start">
+                                    <i class="ri-shield-check-fill text-primary text-xl mr-2 flex-shrink-0"></i>
+                                    <span class="text-xs sm:text-sm">Garantie qualité</span>
+                                </div>
+                                <div class="flex items-center justify-center sm:justify-start">
+                                    <i class="ri-time-fill text-primary text-xl mr-2 flex-shrink-0"></i>
+                                    <span class="text-xs sm:text-sm">Dates de fraîcheur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section-bg py-20">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 animate-fade-in-up">
+                        <h2 class="orbitron text-4xl font-bold mb-4 text-primary">Contactez-nous</h2>
+                        <p class="text-xl text-gray-300">Notre équipe d'experts est là pour vous accompagner</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                        <div class="animate-slide-in-left">
+                            <div class="glass-effect p-8 rounded-2xl">
+                                <h3 class="text-2xl font-bold mb-6 text-primary">Envoyez-nous un message</h3>
+                                <form class="space-y-6">
+                                    <div>
+                                        <input type="text" placeholder="Votre nom" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
+                                    </div>
+                                    <div>
+                                        <input type="email" placeholder="Votre email" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
+                                    </div>
+                                    <div>
+                                        <textarea rows="5" placeholder="Votre message" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors resize-none"></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+                                        <i class="ri-send-plane-fill mr-2 text-white"></i>
+                                        Envoyer le message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="animate-slide-in-right">
+                            <div class="space-y-8">
+                                <div class="glass-effect p-6 rounded-2xl">
+                                    <h3 class="text-xl font-bold mb-4 text-primary">Contact Direct</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center">
+                                            <div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-lg mr-4">
+                                                <i class="ri-whatsapp-fill text-primary text-xl"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold">WhatsApp</div>
+                                                <div class="text-gray-400">+33 6 12 34 56 78</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-lg mr-4">
+                                                <i class="ri-mail-fill text-primary text-xl"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold">Email</div>
+                                                <div class="text-gray-400">contact@fitsupppro.fr</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-lg mr-4">
+                                                <i class="ri-map-pin-fill text-primary text-xl"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold">Adresse</div>
+                                                <div class="text-gray-400">123 Rue du Fitness, 75001 Paris</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="glass-effect p-6 rounded-2xl">
+                                    <h3 class="text-xl font-bold mb-4 text-primary">Horaires d'ouverture</h3>
+                                    <div class="space-y-2 text-gray-300">
+                                        <div class="flex justify-between">
+                                            <span>Lundi - Vendredi</span>
+                                            <span>9h00 - 19h00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Samedi</span>
+                                            <span>9h00 - 17h00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>Dimanche</span>
+                                            <span>Fermé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-whatsapp w-full py-4 !rounded-button font-bold text-lg whitespace-nowrap" onclick="openWhatsApp('Contact direct')">
+                                    <i class="ri-whatsapp-fill mr-2"></i>
+                                    Discuter sur WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black/90 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                           <img src="logo.png" alt="" style="width: 110px;">
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Votre partenaire de confiance pour une nutrition sportive de qualité premium.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-primary/20 transition-colors">
+                                <i class="ri-facebook-fill text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-primary/20 transition-colors">
+                                <i class="ri-instagram-fill text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-lg hover:bg-primary/20 transition-colors">
+                                <i class="ri-youtube-fill text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Navigation</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>
+                                <a href="#accueil" class="hover:text-primary transition-colors">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="#produits" class="hover:text-primary transition-colors">Produits</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="hover:text-primary transition-colors">À Propos</a>
+                            </li>
+                            <li>
+                                <a href="#avis" class="hover:text-primary transition-colors">Avis Clients</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Catégories</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>
+                                <a href="#" class="hover:text-primary transition-colors">Protéines</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-primary transition-colors">Créatines</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-primary transition-colors">Pre-Workout</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-primary transition-colors">Brûleurs de graisse</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-primary transition-colors">Vitamines</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-4 text-primary">Contact</h4>
+                        <div class="space-y-2 text-gray-400">
+                            <div class="flex items-center">
+                                <i class="ri-whatsapp-fill text-primary mr-2"></i>
+                                <span>77 746 15 70</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-mail-fill text-primary mr-2"></i>
+                                <span>contact@Nopain-Nogain-Nutrition.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-map-pin-fill text-primary mr-2"></i>
+                                <span>Médina, Dakar, Senegal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+                    <p>&copy; 2026 Nopain-Nogain-Nutrition. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
+                </div>
+            </div>
+        </footer>
+        <script id="navigation-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+mobileMenuBtn.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+const icon = mobileMenuBtn.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.className = 'ri-menu-line';
+} else {
+icon.className = 'ri-close-line';
+}
+});
+const navLinks = document.querySelectorAll('a[href^="#"]');
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetSection = document.getElementById(targetId);
+if (targetSection) {
+targetSection.scrollIntoView({ behavior: 'smooth' });
+mobileMenu.classList.add('hidden');
+mobileMenuBtn.querySelector('i').className = 'ri-menu-line';
+}
+});
+});
+});
+        </script>
+        <script id="scroll-effects-script">
+document.addEventListener('DOMContentLoaded', function() {
+const scrollIndicator = document.getElementById('scrollIndicator');
+window.addEventListener('scroll', function() {
+const scrollTop = window.pageYOffset;
+const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+const scrollPercent = (scrollTop / docHeight) * 100;
+scrollIndicator.style.transform = `scaleX(${scrollPercent / 100})`;
+});
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, observerOptions);
+const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right');
+animatedElements.forEach(el => {
+el.style.opacity = '0';
+el.style.transform = 'translateY(50px)';
+el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+observer.observe(el);
+});
+});
+        </script>
+        <script id="whatsapp-integration-script">
+function openWhatsApp(product = '') {
+const phoneNumber = '777461570';
+let message = 'Bonjour ! Je suis intéressé(e) par vos compléments alimentaires.';
+if (product) {
+message = `Bonjour ! Je suis intéressé(e) par le produit : ${product}. Pouvez-vous me donner plus d'informations ?`;
+}
+const encodedMessage = encodeURIComponent(message);
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+window.open(whatsappUrl, '_blank');
+}
+function scrollToSection(sectionId) {
+const section = document.getElementById(sectionId);
+if (section) {
+section.scrollIntoView({ behavior: 'smooth' });
+}
+}
+        </script>
+        <script id="product-interactions-script">
+document.addEventListener('DOMContentLoaded', function() {
+const productCards = document.querySelectorAll('.product-card');
+productCards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.style.transform = 'translateY(-10px) rotateX(5deg)';
+});
+card.addEventListener('mouseleave', function() {
+this.style.transform = 'translateY(0) rotateX(0)';
+});
+});
+const brandLogos = document.querySelectorAll('.brand-logo');
+brandLogos.forEach(logo => {
+logo.addEventListener('mouseenter', function() {
+this.style.transform = 'scale(1.1) rotate(5deg)';
+});
+logo.addEventListener('mouseleave', function() {
+this.style.transform = 'scale(1) rotate(0deg)';
+});
+});
+});
+        </script>
+        <script id="form-handling-script">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+const name = this.querySelector('input[type="text"]').value;
+const email = this.querySelector('input[type="email"]').value;
+const message = this.querySelector('textarea').value;
+if (name && email && message) {
+const whatsappMessage = `Nouveau message de contact :\n\nNom : ${name}\nEmail : ${email}\nMessage : ${message}`;
+openWhatsApp(whatsappMessage);
+this.reset();
+alert('Votre message a été envoyé ! Nous vous redirigerons vers WhatsApp.');
+} else {
+alert('Veuillez remplir tous les champs du formulaire.');
+}
+});
+});
+        </script>
+    </body>
+</html>
