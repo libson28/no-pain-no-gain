@@ -214,29 +214,34 @@ animation: none;
                             <button class="filter-btn bg-primary text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="all">
                                 Tous
                             </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="proteins">
-                                Protéines
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="whey-isolate">
+                                <span class="hidden sm:inline">Whey Isolate</span>
+                                <span class="sm:hidden">Isolate</span>
                             </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="creatines">
-                                Créatines
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="whey">
+                                Whey
+                            </button>
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="creatine-monohydrate">
+                                <span class="hidden sm:inline">Créatine Monohydrate</span>
+                                <span class="sm:hidden">Créatine</span>
+                            </button>
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="masse-gainer">
+                                <span class="hidden sm:inline">Masse Gainer</span>
+                                <span class="sm:hidden">Masse</span>
+                            </button>
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="bcaa">
+                                <span class="hidden sm:inline">BCAA</span>
+                                <span class="sm:hidden">BCAA</span>
+                            </button>
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="eaa">
+                                <span class="hidden sm:inline">EAA</span>
+                                <span class="sm:hidden">EAA</span>
                             </button>
                             <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="pre-workout">
                                 <span class="hidden sm:inline">Pre-Workout</span>
                                 <span class="sm:hidden">Pre-W</span>
                             </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="amino-acids">
-                                <span class="hidden sm:inline">Acides Aminés</span>
-                                <span class="sm:hidden">Aminés</span>
-                            </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="mass-gain">
-                                <span class="hidden sm:inline">Prise de Masse</span>
-                                <span class="sm:hidden">Masse</span>
-                            </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="fat-burners">
-                                <span class="hidden sm:inline">Brûleurs de Graisse</span>
-                                <span class="sm:hidden">Brûleurs</span>
-                            </button>
-                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="vitamins">
+                            <button class="filter-btn bg-white/10 text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 !rounded-button font-semibold hover:bg-primary/20 transition-colors whitespace-nowrap text-xs sm:text-sm md:text-base" data-category="vitamines">
                                 Vitamines
                             </button>
                         </div>
@@ -246,9 +251,9 @@ animation: none;
             <section class="bg-dark-pattern py-20">
                 <div class="container mx-auto px-6">
                     <div id="products-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="proteins" style="animation-delay: 0.1s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="whey-isolate" style="animation-delay: 0.1s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=premium%20whey%20protein%20powder%20container%20with%20modern%20label%20design%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20fitness%20supplement%20packaging&width=300&height=200&seq=whey-protein&orientation=landscape" alt="Whey Protein" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=premium%20whey%20protein%20powder%20container%20with%20modern%20label%20design%2C%20professional%20product%20photography%2C%20clean%20white%20background%2C%20fitness%20supplement%20packaging&width=300&height=200&seq=whey-protein&orientation=landscape" alt="Whey Protein Isolate" class="w-full h-48 object-cover rounded-lg">
                                 <div class="absolute top-4 right-4 bg-secondary px-3 py-1 rounded-full text-sm font-bold">
                                     Best Seller
                                 </div>
@@ -256,13 +261,12 @@ animation: none;
                             <h3 class="text-xl font-bold mb-2">Whey Protein Isolate</h3>
                             <p class="text-gray-400 mb-4">Protéine ultra-pure pour une récupération optimale</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">20.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">20.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">24.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-15%</span>
                                 </div>
                             </div>
                             <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Whey Protein Isolate')">
@@ -270,23 +274,22 @@ animation: none;
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="creatines" style="animation-delay: 0.2s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="creatine-monohydrate" style="animation-delay: 0.2s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=creatine%20monohydrate%20supplement%20bottle%20with%20professional%20label%2C%20sports%20nutrition%20product%20photography%2C%20clean%20background%2C%20modern%20packaging%20design&width=300&height=200&seq=creatine&orientation=landscape" alt="Créatine" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=creatine%20monohydrate%20supplement%20bottle%20with%20professional%20label%2C%20sports%20nutrition%20product%20photography%2C%20clean%20background%2C%20modern%20packaging%20design&width=300&height=200&seq=creatine&orientation=landscape" alt="Créatine Monohydrate" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Créatine Monohydrate</h3>
+                            <h3 class="text-xl font-bold mb-2">Créatine Monohydrate Pure</h3>
                             <p class="text-gray-400 mb-4">Augmentez votre force et votre puissance</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">18.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">18.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">22.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-16%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Créatine Monohydrate')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Créatine Monohydrate Pure')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
@@ -301,13 +304,12 @@ animation: none;
                             <h3 class="text-xl font-bold mb-2">Pre-Workout Extreme</h3>
                             <p class="text-gray-400 mb-4">Boostez vos séances d'entraînement</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">32.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">32.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">38.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-14%</span>
                                 </div>
                             </div>
                             <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Pre-Workout Extreme')">
@@ -315,41 +317,39 @@ animation: none;
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="amino-acids" style="animation-delay: 0.4s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="bcaa" style="animation-delay: 0.4s;">
                             <div class="relative mb-6">
                                 <img src="https://readdy.ai/api/search-image?query=BCAA%20amino%20acids%20supplement%20bottle%20with%20modern%20design%2C%20sports%20nutrition%20product%2C%20professional%20photography%2C%20clean%20packaging&width=300&height=200&seq=bcaa&orientation=landscape" alt="BCAA" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">BCAA 2:1:1</h3>
+                            <h3 class="text-xl font-bold mb-2">BCAA 2:1:1 Premium</h3>
                             <p class="text-gray-400 mb-4">Acides aminés essentiels pour la récupération</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">15.000fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">15.000fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">18.500fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-19%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('BCAA 2:1:1')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('BCAA 2:1:1 Premium')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="mass-gain" style="animation-delay: 0.5s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="masse-gainer" style="animation-delay: 0.5s;">
                             <div class="relative mb-6">
                                 <img src="https://readdy.ai/api/search-image?query=mass%20gainer%20protein%20powder%20container%20with%20powerful%20design%2C%20bodybuilding%20supplement%2C%20professional%20product%20photography%2C%20premium%20packaging&width=300&height=200&seq=mass-gainer&orientation=landscape" alt="Mass Gainer" class="w-full h-48 object-cover rounded-lg">
                             </div>
                             <h3 class="text-xl font-bold mb-2">Mass Gainer Pro</h3>
                             <p class="text-gray-400 mb-4">Prise de masse rapide et efficace</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">12.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">25.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">30.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-15%</span>
                                 </div>
                             </div>
                             <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Mass Gainer Pro')">
@@ -357,83 +357,19 @@ animation: none;
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="fat-burners" style="animation-delay: 0.6s;">
-                            <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=fat%20burner%20supplement%20capsules%20bottle%20with%20dynamic%20design%2C%20weight%20loss%20nutrition%20product%2C%20professional%20photography%2C%20modern%20packaging&width=300&height=200&seq=fat-burner&orientation=landscape" alt="Fat Burner" class="w-full h-48 object-cover rounded-lg">
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Fat Burner Advanced</h3>
-                            <p class="text-gray-400 mb-4">Brûleur de graisse nouvelle génération</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">21.000fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
-                                </div>
-                            </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Fat Burner Advanced')">
-                                <i class="ri-whatsapp-fill mr-2"></i>
-                                Commander sur WhatsApp
-                            </button>
-                        </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="amino-acids" style="animation-delay: 0.7s;">
-                            <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=glutamine%20supplement%20powder%20container%20with%20clean%20professional%20design%2C%20sports%20nutrition%20product%20photography%2C%20modern%20packaging&width=300&height=200&seq=glutamine&orientation=landscape" alt="Glutamine" class="w-full h-48 object-cover rounded-lg">
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Glutamine Pure</h3>
-                            <p class="text-gray-400 mb-4">Récupération musculaire optimale</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">22.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
-                                </div>
-                            </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Glutamine Pure')">
-                                <i class="ri-whatsapp-fill mr-2"></i>
-                                Commander sur WhatsApp
-                            </button>
-                        </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="vitamins" style="animation-delay: 0.8s;">
-                            <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=omega-3%20fish%20oil%20capsules%20bottle%20with%20premium%20design%2C%20health%20supplement%20product%2C%20professional%20photography&width=300&height=200&seq=omega3&orientation=landscape" alt="Omega-3" class="w-full h-48 object-cover rounded-lg">
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Omega-3 Premium</h3>
-                            <p class="text-gray-400 mb-4">Santé cardiovasculaire et articulaire</p>
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">19.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                </div>
-                            </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Omega-3 Premium')">
-                                <i class="ri-whatsapp-fill mr-2"></i>
-                                Commander sur WhatsApp
-                            </button>
-                        </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="vitamins" style="animation-delay: 0.9s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="vitamines" style="animation-delay: 0.6s;">
                             <div class="relative mb-6">
                                 <img src="https://readdy.ai/api/search-image?query=multivitamin%20supplement%20bottle%20with%20modern%20label%20design%2C%20comprehensive%20nutrition%20product%2C%20clean%20packaging%20photography&width=300&height=200&seq=multivitamin&orientation=landscape" alt="Multivitamines" class="w-full h-48 object-cover rounded-lg">
                             </div>
                             <h3 class="text-xl font-bold mb-2">Multivitamines Sport</h3>
-                            <p class="text-gray-400 mb-4">Complexe vitaminique pour sportifs</p>
+                            <p class="text-gray-400 mb-4">Complexe vitaminique complet pour sportifs</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">27.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">21.000fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">25.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-16%</span>
                                 </div>
                             </div>
                             <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Multivitamines Sport')">
@@ -441,128 +377,122 @@ animation: none;
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="vitamins" style="animation-delay: 1s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="eaa" style="animation-delay: 0.7s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=ZMA%20zinc%20magnesium%20supplement%20capsules%20with%20professional%20design%2C%20recovery%20nutrition%20product%2C%20modern%20packaging&width=300&height=200&seq=zma&orientation=landscape" alt="ZMA" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=EAA%20essential%20amino%20acids%20supplement%20powder%20with%20professional%20design%2C%20modern%20sports%20nutrition%20product%2C%20clean%20packaging&width=300&height=200&seq=eaa&orientation=landscape" alt="EAA" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">ZMA Recovery</h3>
-                            <p class="text-gray-400 mb-4">Zinc, Magnésium et Vitamine B6</p>
+                            <h3 class="text-xl font-bold mb-2">EAA Essential</h3>
+                            <p class="text-gray-400 mb-4">9 acides aminés essentiels pour la construction musculaire</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">22.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">22.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">27.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-17%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('ZMA Recovery')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('EAA Essential')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="proteins" style="animation-delay: 1.1s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="whey" style="animation-delay: 0.8s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=casein%20protein%20powder%20container%20with%20nighttime%20formula%20design%2C%20slow-release%20protein%20supplement%2C%20premium%20packaging&width=300&height=200&seq=casein&orientation=landscape" alt="Caséine" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=whey%20concentrate%20protein%20powder%20container%2C%20fitness%20supplement%20with%20professional%20design%2C%20clean%20background%20photography&width=300&height=200&seq=whey-concentrate&orientation=landscape" alt="Whey Concentrate" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Caséine Micellaire</h3>
-                            <p class="text-gray-400 mb-4">Protéine à libération lente</p>
+                            <h3 class="text-xl font-bold mb-2">Whey Concentrate Premium</h3>
+                            <p class="text-gray-400 mb-4">Protéine de qualité avec un excellent rapport qualité-prix</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">12.000fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">19.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">23.500fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-17%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Caséine Micellaire')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Whey Concentrate Premium')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="amino-acids" style="animation-delay: 1.2s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="vitamines" style="animation-delay: 0.9s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=HMB%20supplement%20capsules%20bottle%20with%20athletic%20design%2C%20muscle%20preservation%20product%2C%20professional%20supplement%20photography&width=300&height=200&seq=hmb&orientation=landscape" alt="HMB" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=vitamin%20D3%20and%20K2%20supplement%20bottle%20with%20bone%20health%20design%2C%20professional%20nutrition%20product%20photography&width=300&height=200&seq=vitamin-d3-k2&orientation=landscape" alt="Vitamine D3 + K2" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">HMB Advanced</h3>
-                            <p class="text-gray-400 mb-4">Protection et récupération musculaire</p>
+                            <h3 class="text-xl font-bold mb-2">Vitamine D3 + K2</h3>
+                            <p class="text-gray-400 mb-4">Santé osseuse et immunitaire optimale</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">30.000fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">17.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">21.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-17%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('HMB Advanced')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Vitamine D3 + K2')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="creatines" style="animation-delay: 1.3s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="pre-workout" style="animation-delay: 1s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=creatine%20HCL%20supplement%20bottle%20with%20advanced%20formula%20design%2C%20sports%20nutrition%20product%2C%20modern%20packaging%20photography&width=300&height=200&seq=creatine-hcl&orientation=landscape" alt="Créatine HCL" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=stimulant%20free%20pre-workout%20supplement%2C%20clean%20energy%20formula%2C%20professional%20sports%20nutrition%20product%20photography&width=300&height=200&seq=preworkout-stimfree&orientation=landscape" alt="Pre-Workout Stim-Free" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Créatine HCL</h3>
-                            <p class="text-gray-400 mb-4">Forme avancée de créatine ultra-soluble</p>
+                            <h3 class="text-xl font-bold mb-2">Pre-Workout Stim-Free</h3>
+                            <p class="text-gray-400 mb-4">Performance sans caféine pour les séances tardives</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">32.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">27.500fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">32.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-14%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Créatine HCL')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Pre-Workout Stim-Free')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="pre-workout" style="animation-delay: 1.4s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="creatine-monohydrate" style="animation-delay: 1.1s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=caffeine%20supplement%20pills%20bottle%20with%20energy%20boost%20design%2C%20pre-workout%20nutrition%20product%2C%20professional%20packaging%20photography&width=300&height=200&seq=caffeine&orientation=landscape" alt="Caféine" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=microized%20creatine%20monohydrate%20powder%2C%20ultra%20fine%20texture%2C%20professional%20sports%20supplement%20photography&width=300&height=200&seq=creatine-micro&orientation=landscape" alt="Créatine Micronisée" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Caféine Anhydre</h3>
-                            <p class="text-gray-400 mb-4">Boost d'énergie pure et concentration</p>
+                            <h3 class="text-xl font-bold mb-2">Créatine Micronisée</h3>
+                            <p class="text-gray-400 mb-4">Meilleure absorption, sans résidus</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">15.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">20.000fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">24.500fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-18%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Caféine Anhydre')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('Créatine Micronisée')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
                         </div>
-                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="fat-burners" style="animation-delay: 1.5s;">
+                        <div class="product-card p-6 rounded-2xl animate-fade-in-up" data-category="bcaa" style="animation-delay: 1.2s;">
                             <div class="relative mb-6">
-                                <img src="https://readdy.ai/api/search-image?query=L-carnitine%20supplement%20bottle%20with%20weight%20loss%20design%2C%20fat%20burning%20nutrition%20product%2C%20modern%20packaging%20photography&width=300&height=200&seq=lcarnitine&orientation=landscape" alt="L-Carnitine" class="w-full h-48 object-cover rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=BCAA%20powder%20with%20electrolytes%2C%20hydration%20formula%2C%20sports%20nutrition%20product%2C%20modern%20packaging&width=300&height=200&seq=bcaa-electrolytes&orientation=landscape" alt="BCAA + Electrolytes" class="w-full h-48 object-cover rounded-lg">
                             </div>
-                            <h3 class="text-xl font-bold mb-2">L-Carnitine 2000</h3>
-                            <p class="text-gray-400 mb-4">Optimise l'utilisation des graisses</p>
+                            <h3 class="text-xl font-bold mb-2">BCAA + Electrolytes</h3>
+                            <p class="text-gray-400 mb-4">Récupération et hydratation optimales</p>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="text-2xl font-bold text-primary">28.500fcfa</span>
-                                <div class="flex text-yellow-400">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-line"></i>
+                                <div class="flex flex-col">
+                                    <span class="text-2xl font-bold text-primary">18.000fcfa</span>
+                                    <span class="text-gray-500 line-through text-sm">22.000fcfa</span>
+                                </div>
+                                <div class="text-yellow-400 bg-gray-800 px-2 py-1 rounded">
+                                    <span class="font-bold">-18%</span>
                                 </div>
                             </div>
-                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('L-Carnitine 2000')">
+                            <button class="btn-whatsapp w-full py-3 !rounded-button font-semibold whitespace-nowrap" onclick="openWhatsApp('BCAA + Electrolytes')">
                                 <i class="ri-whatsapp-fill mr-2"></i>
                                 Commander sur WhatsApp
                             </button>
@@ -613,23 +543,23 @@ animation: none;
                             </li>
                         </ul>
                     </div>
-                    <div>
+                     <div>
                         <h4 class="font-bold text-lg mb-4 text-primary">Catégories</h4>
                         <ul class="space-y-2 text-gray-400">
                             <li>
-                                <a href="#" class="hover:text-primary transition-colors">Protéines</a>
+                                <a href="##" class="hover:text-primary transition-colors">Protéines</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-primary transition-colors">Créatines</a>
+                                <a href="##" class="hover:text-primary transition-colors">Créatines</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-primary transition-colors">Pre-Workout</a>
+                                <a href="##" class="hover:text-primary transition-colors">Pre-Workout</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-primary transition-colors">Brûleurs de graisse</a>
+                                <a href="##" class="hover:text-primary transition-colors">Brûleurs de graisse</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-primary transition-colors">Vitamines</a>
+                                <a href="##" class="hover:text-primary transition-colors">Vitamines</a>
                             </li>
                         </ul>
                     </div>
@@ -638,15 +568,15 @@ animation: none;
                         <div class="space-y-2 text-gray-400">
                             <div class="flex items-center">
                                 <i class="ri-whatsapp-fill text-primary mr-2"></i>
-                                <span>77 746 15 70</span>
+                                <span>78 577 58 55</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-mail-fill text-primary mr-2"></i>
-                                <span>contact@Nopain-Nogain-Nutrition.com</span>
+                                <span>Nopainnogainnutrition09@gmail.com</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-map-pin-fill text-primary mr-2"></i>
-                                <span>Médina, Dakar, Senegal</span>
+                                <span>Almadie dernière l’agence free mobile</span>
                             </div>
                         </div>
                     </div>
@@ -664,31 +594,47 @@ window.history.back();
 window.location.href = 'index.html';
 }
 }
+
 document.addEventListener('DOMContentLoaded', function() {
 const filterButtons = document.querySelectorAll('.filter-btn');
 const productCards = document.querySelectorAll('.product-card');
+const showMoreContainer = document.getElementById('show-more-container');
+let currentCategory = 'all';
+
 filterButtons.forEach(button => {
 button.addEventListener('click', function() {
-const category = this.getAttribute('data-category');
+currentCategory = this.getAttribute('data-category');
 filterButtons.forEach(btn => {
 btn.classList.remove('bg-primary');
 btn.classList.add('bg-white/10');
 });
 this.classList.remove('bg-white/10');
 this.classList.add('bg-primary');
+
+// Filtrer les produits
 productCards.forEach(card => {
-if (category === 'all') {
+if (currentCategory === 'all') {
 card.style.display = 'block';
 } else {
-if (card.getAttribute('data-category') === category) {
+if (card.getAttribute('data-category') === currentCategory) {
 card.style.display = 'block';
 } else {
 card.style.display = 'none';
 }
 }
 });
+
+// Afficher/masquer le bouton "Afficher plus"
+if (currentCategory === 'all') {
+showMoreContainer.style.display = 'block';
+} else {
+showMoreContainer.style.display = 'none';
+}
 });
 });
+
+// Initialiser l'affichage
+showMoreContainer.style.display = 'block';
 });
         </script>
         <script id="scroll-effects-script">
@@ -780,6 +726,9 @@ alert('Veuillez remplir tous les champs du formulaire.');
 }
 });
 });
+        </script>
+        <script>
+
         </script>
     </body>
 </html>
