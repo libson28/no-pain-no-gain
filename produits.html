@@ -176,27 +176,35 @@ animation: none;
     </head>
     <body>
         <div class="scroll-indicator" id="scrollIndicator"></div>
-        <header class="fixed top-0 w-full z-50 glass-effect">
-            <nav class="container mx-auto px-6 py-4">
-                <div class="flex items-center justify-between">
-                    <button onclick="goBack()" class="w-12 h-12 flex items-center justify-center bg-white/10 rounded-lg hover:bg-primary/20 transition-colors">
-                        <i class="ri-arrow-left-line text-white text-xl"></i>
-                    </button>
-                   <img src="logo.png" alt="" style="width: 110px;">
-                     <div class="flex items-center space-x-4">
-                        <button class="btn-whatsapp flex items-center justify-center w-12 h-12 rounded-lg bg-[#25D366] text-white" onclick="openWhatsApp()">
-                            <i class="ri-whatsapp-fill text-xl"></i>
-                        </button>
-                        <a href="https://www.instagram.com/nopain_nogain_nutrition?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:opacity-90 transition-opacity">
-                            <i class="ri-instagram-fill text-xl"></i>
-                        </a>
-                        <a href="https://web.facebook.com/people/Nopain-Nogain-Nutrition/61561471307579/?ref=_xav_ig_profile_page_web#" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#1877F2] text-white hover:opacity-90 transition-opacity">
-                            <i class="ri-facebook-fill text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+       <header class="fixed top-0 w-full z-50 glass-effect">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Bouton retour - plus petit sur mobile -->
+            <button onclick="goBack()" class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/10 rounded-lg hover:bg-primary/20 transition-colors">
+                <i class="ri-arrow-left-line text-white text-lg md:text-xl"></i>
+            </button>
+            
+            <img src="logo.png" alt="" style="width: 110px;" class="w-24 md:w-32">
+            
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <!-- Bouton WhatsApp -->
+                <button class="btn-whatsapp flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#25D366] text-white" onclick="openWhatsApp()">
+                    <i class="ri-whatsapp-fill text-lg md:text-xl"></i>
+                </button>
+                
+                <!-- Bouton Instagram -->
+                <a href="https://www.instagram.com/nopain_nogain_nutrition?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:opacity-90 transition-opacity">
+                    <i class="ri-instagram-fill text-lg md:text-xl"></i>
+                </a>
+                
+                <!-- Bouton Facebook -->
+                <a href="https://web.facebook.com/people/Nopain-Nogain-Nutrition/61561471307579/?ref=_xav_ig_profile_page_web#" target="_blank" class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#1877F2] text-white hover:opacity-90 transition-opacity">
+                    <i class="ri-facebook-fill text-lg md:text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
         <main>
             <section class="bg-dark-pattern pt-24 pb-8">
                 <div class="container mx-auto px-6">
@@ -207,7 +215,7 @@ animation: none;
                     </div>
                 </div>
             </section>
-            <section class="bg-dark-pattern pb-12">
+            <section class="bg-dark-pattern pb-4">
                 <div class="container mx-auto px-6">
                     <div class="mb-8">
                         <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
@@ -572,7 +580,7 @@ animation: none;
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-mail-fill text-primary mr-2"></i>
-                                <span>Nopainnogainnutrition09@gmail.com</span>
+                                <span>Nopainnogainnutrition <br> 09@gmail.com</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="ri-map-pin-fill text-primary mr-2"></i>
