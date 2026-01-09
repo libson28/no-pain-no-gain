@@ -632,26 +632,30 @@ animation: none;
                         <p class="text-xl text-gray-300">Notre équipe d'experts est là pour vous accompagner</p>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                        <div class="animate-slide-in-left">
-                            <div class="glass-effect p-8 rounded-2xl">
-                                <h3 class="text-2xl font-bold mb-6 text-primary">Envoyez-nous un message</h3>
-                                <form class="space-y-6">
-                                    <div>
-                                        <input type="text" placeholder="Votre nom" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
-                                    </div>
-                                    <div>
-                                        <input type="email" placeholder="Votre email" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors">
-                                    </div>
-                                    <div>
-                                        <textarea rows="5" placeholder="Votre message" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary focus:outline-none transition-colors resize-none"></textarea>
-                                    </div>
-                                    <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
-                                        <i class="ri-send-plane-fill mr-2 text-white"></i>
-                                        Envoyer le message
-                                    </button>
-                                </form>
+                        <div>
+                             <div class="glass-effect p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold mb-4 text-primary">Horaires d'ouverture</h3>
+                            <div class="space-y-2 text-gray-300">
+                                <div class="flex justify-between">
+                                    <span>Lundi - Vendredi</span>
+                                    <span>9h00 - 19h00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Samedi</span>
+                                    <span>9h00 - 17h00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Dimanche</span>
+                                    <span>Fermé</span>
+                                </div>
                             </div>
+                        </div> <br>
+                        <button class="btn-whatsapp w-full py-4 !rounded-button font-bold text-lg whitespace-nowrap" onclick="openWhatsApp('Contact direct')">
+                            <i class="ri-whatsapp-fill mr-2"></i>
+                            Discuter sur WhatsApp
+                        </button>
                         </div>
+                       
                         <div class="animate-slide-in-right">
                             <div class="space-y-8">
                                 <div class="glass-effect p-6 rounded-2xl">
@@ -672,9 +676,11 @@ animation: none;
                                             </div>
                                             <div>
                                                 <div class="font-semibold">Email</div>
-                                                <div class="text-gray-400">  Nopainnogainnutrition
-                                    <br>
-                                    09@gmail.com</div>
+                                                <div class="text-gray-400">
+                                                    Nopainnogainnutrition
+                                                    <br>
+                                                    09@gmail.com
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="flex items-center">
@@ -688,27 +694,6 @@ animation: none;
                                         </div>
                                     </div>
                                 </div>
-                                <div class="glass-effect p-6 rounded-2xl">
-                                    <h3 class="text-xl font-bold mb-4 text-primary">Horaires d'ouverture</h3>
-                                    <div class="space-y-2 text-gray-300">
-                                        <div class="flex justify-between">
-                                            <span>Lundi - Vendredi</span>
-                                            <span>9h00 - 19h00</span>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <span>Samedi</span>
-                                            <span>9h00 - 17h00</span>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <span>Dimanche</span>
-                                            <span>Fermé</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn-whatsapp w-full py-4 !rounded-button font-bold text-lg whitespace-nowrap" onclick="openWhatsApp('Contact direct')">
-                                    <i class="ri-whatsapp-fill mr-2"></i>
-                                    Discuter sur WhatsApp
-                                </button>
                             </div>
                         </div>
                     </div>
